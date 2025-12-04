@@ -597,3 +597,22 @@ button:hover {
         font-size: 0.9rem;
     }
 }
+
+/* GIF bannière aligné sur la largeur de la zone de texte */
+.tape-gif {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.tape-gif img {
+    width: 100%;              /* s’aligne exactement sur la largeur de .tape-content */
+    max-width: 100%;
+    height: auto;             /* empêche toute déformation */
+    max-height: 220px;        /* limite la hauteur si le gif est trop grand */
+    object-fit: cover;        /* recadre subtilement si trop haut */
+    border-radius: 0.6rem;    /* cohérent avec les autres blocs */
+    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+}
